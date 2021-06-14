@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+minor:
+  name: John 
+  age: 18
+
+adult:
+  name: Jeff 
+  age: 22
+
+baby:
+  name: Amy
+  age: 1
