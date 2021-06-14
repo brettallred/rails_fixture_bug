@@ -15,11 +15,12 @@ INSERT INTO "users" ("id", "name", "age", "created_at", "updated_at", "is_minor"
 ROLLBACK
 ```
 
-```Error:
+```
+Error:
 UserTest#test_users_age:
 ActiveRecord::StatementInvalid: PG::SyntaxError: ERROR:  cannot insert into column "is_minor"
-DETAIL:  Column "is_minor" is a generated column.```
-
+DETAIL:  Column "is_minor" is a generated column.
+```
 
 * In fixtures/users.yml - delete two of the fixtures (minor and baby) so there is only one (adult) remaining.
 * bin/rails test
@@ -41,6 +42,7 @@ ROLLBACK
 ```
 
 TEST OUTPUT
+
 ```
 Finished in 0.029992s, 33.3422 runs/s, 33.3422 assertions/s.
 1 runs, 1 assertions, 0 failures, 0 errors, 0 skips
